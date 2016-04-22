@@ -16,7 +16,7 @@ class Params
 		title = $STR_PARAMS_DIFFICULTY;
 		values[] = { 0.5, 0.75, 1, 1.25, 1.5, 2, 4, 10 };
 		texts[] = { $STR_PARAMS_DIFFICULTY1, $STR_PARAMS_DIFFICULTY2, $STR_PARAMS_DIFFICULTY3, $STR_PARAMS_DIFFICULTY4, $STR_PARAMS_DIFFICULTY5, $STR_PARAMS_DIFFICULTY6, $STR_PARAMS_DIFFICULTY7, $STR_PARAMS_DIFFICULTY8 };
-		default = 0.75;
+		default = 1;
 	};
 	class Aggressivity{
 		title = $STR_AGGRESSIVITY_PARAM;
@@ -34,25 +34,25 @@ class Params
 		title = $STR_PARAMS_DAYDURATION;
 		values[] = { 48, 24, 16, 12, 9.6, 8, 6.8, 6, 4.8, 4, 3, 2.4, 2, 1.6, 1, 0.66, 0.5, 0.375, 0.25, 0.1875, 0.125, 0.11 };
 		texts[] = { "0.5", "1", "1.5", "2", "2.5", "3","3.5","4","5","6","8","10","12","15","24","36","48","64","96","128","192","240" };
-		default = 2.4;
+		default = 12;
 	};
 	class ShorterNights {
 		title = $STR_SHORTER_NIGHTS_PARAM;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class Weather {
 		title = $STR_WEATHER_PARAM;
 		values[] = { 1,2,3 };
 		texts[] = { $STR_WEATHER_PARAM1, $STR_WEATHER_PARAM2, $STR_WEATHER_PARAM3 };
-		default = 1;
+		default = 3;
 	};
 	class ResourcesMultiplier {
 		title = $STR_PARAMS_RESOURCESMULTIPLIER;
 		values[] = { 0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 3, 5, 10, 20, 50 };
 		texts[] = { "x0.25", "x0.5", "x0.75", "x1", "x1.25","x1.5","x2","x3","x5","x10","x20","x50" };
-		default = 50;
+		default = 1;
 	};
 	class Spacer1 {
 		title = "";
@@ -70,7 +70,7 @@ class Params
 		title = $STR_PARAMS_REVIVE;
 		values[] = { 3, 2, 1, 0 };
 		texts[] = { $STR_PARAMS_REVIVE3, $STR_PARAMS_REVIVE2, $STR_PARAMS_REVIVE1, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 3;
 	};
 	class Civilians{
 		title = $STR_PARAMS_CIVILIANS;
@@ -88,7 +88,7 @@ class Params
 		title = $STR_PARAM_PASSIVE_INCOME;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class AmmoBounties{
 		title = $STR_AMMO_BOUNTIES;
@@ -148,13 +148,13 @@ class Params
 		title = $STR_PARAMS_INTRO;
 		values[] = { 1, 0 };
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class DeploymentCinematic {
 		title = $STR_PARAMS_DEPLOYMENTCAMERA;
 		values[] = { 1, 0 };
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class FirstFob {
 		title = $STR_PARAMS_FIRSTFOB;
@@ -166,7 +166,7 @@ class Params
 		title = $STR_WHITELIST_PARAM;
 		values[] = { 1, 0 };
 		texts[] = { $STR_WHITELIST_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class WipeSave1{
 		title = $STR_WIPE_TITLE;
