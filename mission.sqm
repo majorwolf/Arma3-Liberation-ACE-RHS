@@ -27,7 +27,21 @@ class Mission
 		"3DEN",
 		"A3_Data_F_Exp_A_Virtual",
 		"A3_Air_F_Heli_Heli_Light_01",
-		"A3_Soft_F_Truck"
+		"A3_Soft_F_Truck",
+		"ace_main",
+		"ace_common",
+		"ace_advanced_ballistics",
+		"ace_medical",
+		"ace_modules",
+		"ace_apl",
+		"ace_map",
+		"ace_nametags",
+		"ace_finger",
+		"ace_sitting",
+		"ace_weather",
+		"ace_winddeflection",
+		"ace_interact_menu",
+		"ace_interaction"
 	};
 	addOnsAuto[]=
 	{
@@ -54,7 +68,21 @@ class Mission
 		"A3_Air_F_Beta_Heli_Transport_01",
 		"A3_Air_F_Heli_Heli_Light_01",
 		"A3_Soft_F_Truck",
-		"a3_map_altis"
+		"a3_map_altis",
+		"ace_main",
+		"ace_common",
+		"ace_advanced_ballistics",
+		"ace_medical",
+		"ace_modules",
+		"ace_apl",
+		"ace_map",
+		"ace_nametags",
+		"ace_finger",
+		"ace_sitting",
+		"ace_weather",
+		"ace_winddeflection",
+		"ace_interact_menu",
+		"ace_interaction"
 	};
 	randomSeed=7571389;
 	class Intel
