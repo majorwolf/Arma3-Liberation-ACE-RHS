@@ -1,0 +1,36 @@
+respawn = 3;
+respawndelay = 5;
+disabledAI = true;
+
+enableDebugConsole = 1;
+allowFunctionsLog = 0;
+
+loadScreen="res\liberation.jpg";
+onLoadMission = $STR_MISSION_TITLE;
+author = "[GREUH] Zbug, [GREUH] McKeewa";
+onLoadName = $STR_MISSION_TITLE;
+
+joinUnassigned = 0;
+
+class Header
+{
+	gameType = CTI;
+	minPlayers = 1;
+	maxPlayers = 41;
+};
+
+#include "GREUH\UI\GREUH_interface.hpp"
+#include "ui\liberation_interface.hpp"
+#include "ui\liberation_notifications.hpp"
+#include "ui\mission_params.hpp"
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title =	$STR_SORRY;
+		subtitle = "";
+		description = $STR_COMMANDER_NOT_AUTHORIZED;
+		pictureBackground = "";
+	};
+};
