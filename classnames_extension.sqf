@@ -124,8 +124,8 @@ air_vehicles_extension = [
 	["RHS_Mi24V_vvsc",0,75,40],
 	["RHS_AH1Z_CS",0,200,50],
 	["RHS_AH64D_CS",0,200,50],
-	["RHS_A10",0,250,15],
-	["Peral_A10C",0,250,15],
+	["RHS_A10",0,200,15],
+	["Peral_A10C",0,200,15],
 	["rhsusf_f22",0,300,15]
 ];
 
@@ -316,7 +316,7 @@ opfor_paratrooper = "rhs_msv_emr_combatcrew";
 // OPFOR Vehicles to be used in secondary objectives
 opfor_mrap = "rhs_tigr_3camo_msv";
 opfor_mrap_armed = "rhs_tigr_sts_3camo_msv";
-opfor_transport_helo = "rhs_Mi8AMT_vvsc;
+opfor_transport_helo = "rhs_Mi8AMT_vvsc";
 opfor_transport_truck = "rhs_Ural_Open_Flat_MSV_01";
 opfor_fuel_truck = "rhs_Ural_Fuel_MSV_01";
 opfor_ammo_truck = "rhs_gaz66_ammo_msv";
@@ -391,7 +391,6 @@ opfor_battlegroup_vehicles_extension = [
 	"rhs_brm1k_msv",
 	"rhs_t72bd_tv",
 	"rhs_Mi24P_AT_vdu",
-	"rhs_Su25SM_KH29_vvsc",
 	"rhs_Ka52_vvsc",
 	"rhs_typhoon_vdv",
 	"rhs_Ural_msv_01"
@@ -417,13 +416,13 @@ opfor_troup_transports_extension = [
 opfor_choppers_overwrite = true;
 opfor_choppers_extension = [
 	"rhs_Mi24P_AT_vdu",
-	"rhs_Ka52_vvsc",
+	"rhs_Ka52_vvsc"
 ];
 
 // Opfor military aircrafts
-opfor_air_overwrite = true;
+opfor_air_overwrite = false;
 opfor_air_extension = [
-	"rhs_Su25SM_KH29_vvsc",
+
 ];
 
 
