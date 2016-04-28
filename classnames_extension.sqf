@@ -378,7 +378,10 @@ opfor_vehicles_extension = [
 opfor_vehicles_low_intensity_overwrite = true;
 opfor_vehicles_low_intensity_extension = [
 	"rhs_btr70_chdkz",
-	"rhs_zsu234_chdkz"
+	"rhs_zsu234_chdkz",
+	"rhs_Ural_msv_01",
+	"rhs_tigr_sts_3camo_msv",
+	"rhs_brm1k_msv"
 ];
 
 // All the vehicles that can spawn as battlegroup members
