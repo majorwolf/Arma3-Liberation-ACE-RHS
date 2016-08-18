@@ -8,7 +8,7 @@ if ( isMultiplayer ) then {
 	GRLIB_deployment_cinematic = ["DeploymentCinematic",1] call bis_fnc_getParamValue;
 	GRLIB_unitcap = ["Unitcap",1] call bis_fnc_getParamValue;
 	GRLIB_adaptive_opfor = ["AdaptToPlayercount",1] call bis_fnc_getParamValue;
-	GRLIB_civilian_activity = ["Civilians",1] call bis_fnc_getParamValue;
+	GRLIB_civilian_activity = ["civilians",1] call bis_fnc_getParamValue;
 	GRLIB_teamkill_penalty = ["TeamkillPenalty",0] call bis_fnc_getParamValue;
 	GRLIB_build_first_fob = ["FirstFob",0] call bis_fnc_getParamValue;
 	GRLIB_param_wipe_savegame_1 = ["WipeSave1",0] call bis_fnc_getParamValue;
@@ -22,10 +22,12 @@ if ( isMultiplayer ) then {
 	GRLIB_weather_param = ["Weather",3] call bis_fnc_getParamValue;
 	GRLIB_shorter_nights = ["ShorterNights",0] call bis_fnc_getParamValue;
 	GRLIB_ammo_bounties = [ "AmmoBounties",0] call bis_fnc_getParamValue;
+	GRLIB_civ_penalties = [ "CivPenalties",0] call bis_fnc_getParamValue;
 	GRLIB_remote_sensors = [ "DisableRemoteSensors",0] call bis_fnc_getParamValue;
 	GRLIB_blufor_defenders = [ "BluforDefenders",1] call bis_fnc_getParamValue;
 	GRLIB_autodanger = [ "Autodanger",0] call bis_fnc_getParamValue;
 	GRLIB_maximum_fobs = [ "MaximumFobs",26] call bis_fnc_getParamValue;
+	GRLIB_max_squad_size = ["MaxSquadSize",10] call bis_fnc_getParamValue;
 } else {
 	GRLIB_difficulty_modifier = 1;
 	GRLIB_time_factor = 12;
@@ -50,16 +52,12 @@ if ( isMultiplayer ) then {
 	GRLIB_weather_param = 3;
 	GRLIB_shorter_nights = 0;
 	GRLIB_ammo_bounties = 1;
+	GRLIB_civ_penalties = 1;
 	GRLIB_remote_sensors = 0;
 	GRLIB_blufor_defenders = 1;
 	GRLIB_autodanger = 0;
 	GRLIB_maximum_fobs = 26;
-
-	{
-		if ( (_x != player) && (_x distance (getmarkerpos "respawn_west") < 200 ) ) then {
-			deleteVehicle _x;
-		};
-	} foreach allUnits;
+	GRLIB_max_squad_size = 10;
 };
 
 if ( GRLIB_fatigue < 0.1 ) then { GRLIB_fatigue = false } else { GRLIB_fatigue = true };
@@ -73,5 +71,6 @@ if ( GRLIB_permissions_param == 1 ) then { GRLIB_permissions_param = true } else
 if ( GRLIB_use_whitelist == 1 ) then { GRLIB_use_whitelist = true } else { GRLIB_use_whitelist = false };
 if ( GRLIB_shorter_nights == 1 ) then { GRLIB_shorter_nights = true } else { GRLIB_shorter_nights = false };
 if ( GRLIB_ammo_bounties == 1 ) then { GRLIB_ammo_bounties = true } else { GRLIB_ammo_bounties = false };
+if ( GRLIB_civ_penalties == 1 ) then { GRLIB_civ_penalties = true } else { GRLIB_civ_penalties = false };
 if ( GRLIB_blufor_defenders == 1 ) then { GRLIB_blufor_defenders = true } else { GRLIB_blufor_defenders = false };
 if ( GRLIB_autodanger == 1 ) then { GRLIB_autodanger = true } else { GRLIB_autodanger = false };

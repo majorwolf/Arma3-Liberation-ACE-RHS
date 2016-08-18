@@ -70,7 +70,7 @@ class Params
 		title = $STR_PARAMS_REVIVE;
 		values[] = { 3, 2, 1, 0 };
 		texts[] = { $STR_PARAMS_REVIVE3, $STR_PARAMS_REVIVE2, $STR_PARAMS_REVIVE1, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 3;
 	};
 	class Civilians{
 		title = $STR_PARAMS_CIVILIANS;
@@ -96,6 +96,12 @@ class Params
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
 		default = 1;
 	};
+	class CivPenalties{
+		title = $STR_CIV_PENALTIES;
+		values[] = {1,0};
+		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
+		default = 1;
+	};
 	class HaloJump{
 		title = $STR_HALO_PARAM;
 		values[] = {1,5,10,15,20,30,0};
@@ -112,13 +118,19 @@ class Params
 		title = $STR_PARAM_AUTODANGER;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class MaximumFobs{
 		title = $STR_PARAM_FOBS_COUNT;
 		values[] = {3,5,7,10,15,20,26};
 		texts[] = {3,5,7,10,15,20,26};
 		default = 26;
+	};
+	class MaxSquadSize{
+		title = $STR_PARAM_SQUAD_SIZE;
+		values[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
+		texts[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
+		default = 10;
 	};
 	class Space2 {
 		title = "";
